@@ -892,6 +892,16 @@
   <input id="company" name="company" value="" type="hidden">
   <input id="email" name="email" value="" type="hidden">
   
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-85369768-7"></script>
+	<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-85369768-7');
+	</script>
+  
   <!-- Core -->
   <script src="./assets/vendor/jquery/jquery.min.js"></script>
   <script src="./assets/vendor/popper/popper.min.js"></script>
@@ -911,7 +921,7 @@
 			preventSubmit: true,
 			submitSuccess: function ($form, event) {
 
-			  var URL = 'https://jmkt94us5c.execute-api.us-east-1.amazonaws.com/default/emailLeadsToChangeFox'
+			  var URL = 'https://jmkt94us5c.execute-api.us-east-1.amazonaws.com/Production/emailLeadsToChangeFox'
 			  var data = {
 				source: 'HOW TO OFFSHORE',
 				type: 'TRELLO REQUEST',
@@ -935,7 +945,7 @@
 				},
 				error: function () {
 				  // show an error message
-				  alert("Oh my something has gone horribly wrong! Please try again later but if you have no luck, please contact us on social media instead")
+				  alert("Oh my something has gone wrong. You can email us directly on social@howtooffshore.com instead! Sorry for the inconvenience!")
 				}
 			  })
 
@@ -961,7 +971,7 @@
 			preventSubmit: true,
 			submitSuccess: function ($form, event) {
 
-			  var URL = 'https://jmkt94us5c.execute-api.us-east-1.amazonaws.com/default/emailLeadsToChangeFox'
+			  var URL = 'https://jmkt94us5c.execute-api.us-east-1.amazonaws.com/Production/emailLeadsToChangeFox'
 			  var data = {
 				source: 'HOW TO OFFSHORE',
 				type: 'NEWSLETTER',
@@ -984,7 +994,7 @@
 				},
 				error: function () {
 				  // show an error message
-				  alert("Oh my something has gone horribly wrong! Please try again later but if you have no luck, please contact us on social media instead")
+				  alert("Oh my something has gone wrong. You can email us directly on social@howtooffshore.com instead! Sorry for the inconvenience!")
 				}
 			  })
 
@@ -1010,7 +1020,7 @@
 			submitSuccess: function ($form, event) {
 
 
-			  var URL = 'https://jmkt94us5c.execute-api.us-east-1.amazonaws.com/default/emailLeadsToChangeFox'
+			  var URL = 'https://jmkt94us5c.execute-api.us-east-1.amazonaws.com/Production/emailLeadsToChangeFox'
 			  var data = {
 				source: 'HOW TO OFFSHORE',
 				type: 'DIRECT REQUEST',
@@ -1035,7 +1045,7 @@
 				},
 				error: function () {
 				  // show an error message
-				  alert("Oh my something has gone horribly wrong! Please try again later but if you have no luck, please contact us on social media instead")
+				  alert("Oh my something has gone wrong. You can email us directly on social@howtooffshore.com instead! Sorry for the inconvenience!")
 				}
 			  })
 
