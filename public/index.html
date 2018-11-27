@@ -665,50 +665,55 @@
                 <h4 class="mb-1">Get your copy now!</h4>
                 <p class="mt-0">We will create your pre-populated board and invite you as an administrator, then it is over to you but do not forget we are here if you need guidance</p>
 				
-				<form id="trello">
+                <form name="trello" id="trello" method="POST" netlify-honeypot="bot-field" netlify>
+                    <p class="hidden">
+                      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+            
+                    <input id="source" name="source" value="HOW TO OFFSHORE" type="hidden">
+                    <input id="type" name="type" value="TRELLO" type="hidden">
 				
-					<div id="trello-form">
-					
-					
-						<div class="form-group mt-3">
-						  <div class="input-group input-group-alternative">
-							<div class="input-group-prepend">
-							  <span class="input-group-text"><i class="fal fa-user"></i></span>
-							</div>
-							<input class="form-control" placeholder="Your name" id="trello-name" name="trello-name" type="text">
-						  </div>
-						</div>
-						<div class="form-group">
-						  <div class="input-group input-group-alternative">
-							<div class="input-group-prepend">
-							  <span class="input-group-text"><i class="fal fa-building"></i></span>
-							</div>
-							<input class="form-control" placeholder="Your company" id="trello-company" name="trello-company" type="text">
-						  </div>
-						</div>
-						<div class="form-group">
-						  <div class="input-group input-group-alternative">
-							<div class="input-group-prepend">
-							  <span class="input-group-text"><i class="fal fa-envelope"></i></span>
-							</div>
-							<input class="form-control" placeholder="Email address" id="trello-email" name="trello-email"  type="email">
-						  </div>
-						</div>
-						<div>
-						  <button type="submit" class="btn btn-neutral btn-round btn-block btn-lg">Get it now!</button>
-						</div>
-						
-					</div>
-					
-					<div style="display:none;" id="trello-success">
-						<div class="alert alert-success" role="alert">
-						 You are going to love this resource! It does take a little time to configure and send to you but we will get it done as soon as possible!
-						</div>
-					</div>
-				  
-				</form>
-			  
-			  </div>
+                    <div id="trello-form">
+                      
+                      <div class="form-group mt-3">
+                        <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fal fa-user"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Your name" id="trello-name" name="trello-name" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fal fa-building"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Your company" id="trello-company" name="trello-company" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fal fa-envelope"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Email address" id="trello-email" name="trello-email"  type="email">
+                        </div>
+                      </div>
+                      <div>
+                        <button type="submit" class="btn btn-neutral btn-round btn-block btn-lg">Get it now!</button>
+                      </div>
+                      
+                    </div>
+                    
+                    <div style="display:none;" id="trello-success">
+                      <div class="alert alert-success" role="alert">
+                      You are going to love this resource! It does take a little time to configure and send to you but we will get it done as soon as possible!
+                      </div>
+                    </div>
+                    
+                  </form>
+                  
+                </div>
 			  
             </div>
           </div>
@@ -770,9 +775,12 @@
                 <p class="mt-0">Every offshoring project is important to us and we work with you to improve the results and build exceptional teams</p>
 				
                 <form name="directrequest" id="directrequest" method="POST" netlify-honeypot="bot-field" netlify>
-                  <p class="hidden">
-                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                  </p>
+                    <p class="hidden">
+                      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+            
+                    <input id="source" name="source" value="HOW TO OFFSHORE" type="hidden">
+                    <input id="type" name="type" value="DIRECT REQUEST" type="hidden">
                 
                   <div id="directrequest-form">
                   
@@ -851,7 +859,6 @@
 		<div class="col-lg-8 mb-3 mt-3">
 		
       <form name="newsletter" id="newsletter" method="POST" netlify-honeypot="bot-field" netlify>
-      <!-- <form name="contact" method="POST" netlify> -->
         <p class="hidden">
           <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
         </p>
