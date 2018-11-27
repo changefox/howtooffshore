@@ -24,7 +24,7 @@
   <header class="header-global">
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom fixed-top">
       <div class="container">
-        <a class="navbar-brand mr-lg-5" href="./index.html">
+        <a class="navbar-brand mr-lg-5" href="./">
           <img src="./assets/img/brand/white.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
           <div class="navbar-collapse-header">
             <div class="row">
               <div class="col-6 collapse-brand">
-                <a href="./index.html">
+                <a href="./">
                   <img src="./assets/img/brand/blue.png">
                 </a>
               </div>
@@ -94,28 +94,35 @@
           <div class="col px-0">
             <div class="row">
               <div class="col-lg-8">
-                <h1 class="display-4  text-white">Offshoring is a great way to
-                  reduce costs, increase diversity, service your customers, create competitive advantage
-				  &amp; and make a real difference to the lives of the people that you work with
+
+                <div id="typed-strings" style="position: absolute;">
+
+                    <p>reduce costs</p>
+                    <p>increase diversity</p>
+                    <p>service your customers</p>
+                    <p>create an advantage</p>
+    
+                </div>
+                
+                <h1 class="display-5  text-white">Offshoring is a great way to 
+                  <span class="u-text-animation u-text-animation--typing"></span><br>
+				          while making a real difference to the lives of the people that you work with
                 </h1>
                 <p class="lead  text-white">
-					The information on this page will give you the information you need to make
-					the best decisions for your offshoring initiative and ensure success!
-				</p>
-<!--                 <div class="btn-wrapper">
-                  <a href="https://demos.creative-tim.com/argon-design-system/docs/components/alerts.html" class="btn btn-info btn-icon mb-3 mb-sm-0">
-                    <span class="btn-inner--icon"><i class="fa fa-code"></i></span>
-                    <span class="btn-inner--text">Components</span>
+                  The information on this page will give you the information you need to make
+                  the best decisions for your offshoring initiative and ensure success!
+                </p>
+                 <div class="btn-wrapper">
+                  <a role="button" data-toggle="modal" data-target="#modal-freeconsultation" class="btn btn-white btn-icon mb-3 mb-sm-0">
+                    <span class="btn-inner--icon"><i class="fal fa-angle-right"></i></span>
+                    <span class="btn-inner--text">What is offshoring?</span>
                   </a>
-                  <a href="https://www.creative-tim.com/product/argon-design-system" class="btn btn-white btn-icon mb-3 mb-sm-0">
-                    <span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
-                    <span class="btn-inner--text">Download HTML</span>
-                  </a>
-                </div> -->
+                  <a role="button" data-toggle="modal" data-target="#modal-freeconsultation" class="btn btn-white btn-icon mb-3 mb-sm-0">
+                      <span class="btn-inner--icon"><i class="fal fa-angle-right"></i></span>
+                      <span class="btn-inner--text">Who should offshore?</span>
+                    </a>
+                </div>
               </div>
-<!-- 			  <div class="col-lg-4">
-				<img src="./assets/img/theme/feature.png" class="img-fluid">
-			  </div> -->
             </div>
           </div>
         </div>
@@ -147,7 +154,7 @@
                       <span class="badge badge-pill badge-primary">first steps</span>
                     </div>
 
-					<button type="button" class="btn btn-primary mt-4" data-toggle="modal" data-target="#modal-freeconsultation">Learn more</button>
+					          <button type="button" class="btn btn-primary mt-4" data-toggle="modal" data-target="#modal-freeconsultation">Learn more</button>
 					
                   </div>
                 </div>
@@ -578,9 +585,9 @@
               <div class="pl-4">
                 <h4 class="display-3 text-white">Agile Approach</h4>
                 <p class="text-white">
-					We recommend an agile approach to your project to better support you and your team with
-					dynamic adjustments as necessary.
-				</p>
+                  We recommend an agile approach to your project to better support you and your team with
+                  dynamic adjustments as necessary.
+                </p>
               </div>
             </div>
             <div class="card shadow shadow-lg--hover mt-5">
@@ -745,6 +752,8 @@
         </svg>
       </div>
     </section>
+
+
     <section class="section section-lg pt-lg-0 section-contact-us">
       <div class="container">
         <div class="row justify-content-center mt--300">
@@ -754,50 +763,54 @@
                 <h4 class="mb-1">Want to improve the results of your project?</h4>
                 <p class="mt-0">Every offshoring project is important to us and we work with you to improve the results and build exceptional teams</p>
 				
-				<form id="directrequest">
-				
-					<div id="directrequest-form">
-					
-						<div class="form-group mt-5">
-						  <div class="input-group input-group-alternative">
-							<div class="input-group-prepend">
-							  <span class="input-group-text"><i class="fal fa-user"></i></span>
-							</div>
-							<input class="form-control" id="directrequest-name" name="directrequest-name" placeholder="Your name" type="text" required data-validation-required-message="Please enter your name.">
-						  </div>
-						</div>
-						<div class="form-group">
-						  <div class="input-group input-group-alternative">
-							<div class="input-group-prepend">
-							  <span class="input-group-text"><i class="fal fa-building"></i></span>
-							</div>
-							<input class="form-control" id="directrequest-company" name="directrequest-company" placeholder="Company name" type="text">
-						  </div>
-						</div>
-						<div class="form-group">
-						  <div class="input-group input-group-alternative">
-							<div class="input-group-prepend">
-							  <span class="input-group-text"><i class="fal fa-envelope"></i></span>
-							</div>
-							<input class="form-control" id="directrequest-email" name="directrequest-email" placeholder="Email address" type="email" required data-validation-required-message="Please enter your name.">
-						  </div>
-						</div>
-						<div class="form-group mb-4">
-						  <textarea class="form-control form-control-alternative" id="notes" name="notes"  rows="4" cols="80" placeholder="Type a message..."></textarea>
-						</div>
-						<div>
-						  <button type="submit" class="btn btn-default btn-round btn-block btn-lg">Send Message</button>
-						</div>
-					
-					</div>
-					
-					<div style="display:none;" id="directrequest-success">
-						<div class="alert alert-success" role="alert">
-						 Thank you for reaching out! We will be in touch very shortly!
-						</div>
-					</div>
-					
-				</form>
+                <form name="directrequest" id="directrequest" method="POST" netlify-honeypot="bot-field" netlify>
+                  <p class="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                  </p>
+                
+                  <div id="directrequest-form">
+                  
+                    <div class="form-group mt-5">
+                      <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fal fa-user"></i></span>
+                      </div>
+                      <input class="form-control" id="directrequest-name" name="directrequest-name" placeholder="Your name" type="text" required data-validation-required-message="Please enter your name.">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fal fa-building"></i></span>
+                      </div>
+                      <input class="form-control" id="directrequest-company" name="directrequest-company" placeholder="Company name" type="text">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fal fa-envelope"></i></span>
+                      </div>
+                      <input class="form-control" id="directrequest-email" name="directrequest-email" placeholder="Email address" type="email" required data-validation-required-message="Please enter your name.">
+                      </div>
+                    </div>
+                    <div class="form-group mb-4">
+                      <textarea class="form-control form-control-alternative" id="notes" name="notes"  rows="4" cols="80" placeholder="Type a message..."></textarea>
+                    </div>
+                    <div>
+                      <button type="submit" class="btn btn-default btn-round btn-block btn-lg">Send Message</button>
+                    </div>
+                  
+                  </div>
+                  
+                  <div style="display:none;" id="directrequest-success">
+                    <div class="alert alert-success" role="alert">
+                    Thank you for reaching out! We will be in touch very shortly!
+                    </div>
+                  </div>
+                  
+                </form>
+
               </div>
             </div>
           </div>
@@ -831,7 +844,10 @@
         </div>
 		<div class="col-lg-8 mb-3 mt-3">
 		
-			<form id="newsletter">
+      <form name="newsletter" id="newsletter" method="POST" netlify-honeypot="bot-field" netlify>
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
 			  
 			  <div class="form-row" id="newsletter-form">
 				<div class="col">
@@ -905,227 +921,26 @@
   <!-- Core -->
   <script src="./assets/vendor/jquery/jquery.min.js"></script>
   <script src="./assets/vendor/popper/popper.min.js"></script>
+  <!-- <script src="./assets/vendor/typed.js/lib/typed.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
   <script src="./assets/vendor/headroom/headroom.min.js"></script>
   <!-- Argon JS -->
   <script src="./assets/js/argon.js?v=1.0.1"></script>
-  
-  <script src="./assets/js/jqBootstrapValidation.js"></script>
+
   <script>
-	
-	
-	// TRELLO SUBMISSION
-	$(function() {
-
-		$("#trello input,#trello textarea").jqBootstrapValidation({
-			preventSubmit: true,
-			submitSuccess: function ($form, event) {
-
-			  var URL = 'https://jmkt94us5c.execute-api.us-east-1.amazonaws.com/Production/emailLeadsToChangeFox'
-			  var data = {
-				source: 'HOW TO OFFSHORE',
-				type: 'TRELLO REQUEST',
-				name: $('#name').val(),
-				company: $('#company').val(),
-				email: $('#email').val()
-			  }
-			  $.ajax({
-				type: 'POST',
-				url: URL,
-				dataType: 'json',
-				contentType: 'application/json',
-				data: JSON.stringify(data),
-				success: function () {
-				  
-				  // Hide our form
-				  $( "#trello-form" ).hide();
-				  
-				  // Show our success message!
-				  $( "#trello-success" ).show();
-				},
-				error: function () {
-				  // show an error message
-				  alert("Oh my something has gone wrong. You can email us directly on social@howtooffshore.com instead! Sorry for the inconvenience!")
-				}
-			  })
-
-			  // will not trigger the default submission in favor of the ajax function
-			  event.preventDefault();
-			},
-			submitError: function($form, event, errors) {
-				// additional error messages or events
-			},
-			filter: function() {
-				return $(this).is(":visible");
-			},
-		});
-			
-		
-	});
-	
-	// NEWSLETTER SUBMISSION
-	$(function() {
-
-		$("#newsletter input").jqBootstrapValidation({
-		
-			preventSubmit: true,
-			submitSuccess: function ($form, event) {
-
-			  var URL = 'https://jmkt94us5c.execute-api.us-east-1.amazonaws.com/Production/emailLeadsToChangeFox'
-			  var data = {
-				source: 'HOW TO OFFSHORE',
-				type: 'NEWSLETTER',
-				name: $('#name').val(),
-				email: $('#email').val()
-			  }
-			  $.ajax({
-				type: 'POST',
-				url: URL,
-				dataType: 'json',
-				contentType: 'application/json',
-				data: JSON.stringify(data),
-				success: function () {
-				  
-				  // Hide our form
-				  $( "#newsletter-form" ).hide();
-				  
-				  // Show our success message!
-				  $( "#newsletter-success" ).show();
-				},
-				error: function () {
-				  // show an error message
-				  alert("Oh my something has gone wrong. You can email us directly on social@howtooffshore.com instead! Sorry for the inconvenience!")
-				}
-			  })
-
-			  // will not trigger the default submission in favor of the ajax function
-			  event.preventDefault();
-			},
-			submitError: function($form, event, errors) {
-				// additional error messages or events
-			},
-			filter: function() {
-				return $(this).is(":visible");
-			},
-		});
-			
-		
-	});
-	
-	// DIRECT REQUEST SUBMISSION
-	$(function() {
-
-		$("#directrequest input,#directrequest textarea").jqBootstrapValidation({
-			preventSubmit: true,
-			submitSuccess: function ($form, event) {
-
-
-			  var URL = 'https://jmkt94us5c.execute-api.us-east-1.amazonaws.com/Production/emailLeadsToChangeFox'
-			  var data = {
-				source: 'HOW TO OFFSHORE',
-				type: 'DIRECT REQUEST',
-				name: $('#name').val(),
-				company: $('#company').val(),
-				notes: $('#notes').val(),
-				email: $('#email').val()
-			  }
-			  $.ajax({
-				type: 'POST',
-				url: URL,
-				dataType: 'json',
-				contentType: 'application/json',
-				data: JSON.stringify(data),
-				success: function () {
-				  
-				  // Hide our form
-				  $( "#directrequest-form" ).hide();
-				  
-				  // Show our success message!
-				  $( "#directrequest-success" ).show();
-				},
-				error: function () {
-				  // show an error message
-				  alert("Oh my something has gone wrong. You can email us directly on social@howtooffshore.com instead! Sorry for the inconvenience!")
-				}
-			  })
-
-			  // will not trigger the default submission in favor of the ajax function
-			  event.preventDefault();
-			},
-			submitError: function($form, event, errors) {
-				// additional error messages or events
-			},
-			filter: function() {
-				return $(this).is(":visible");
-			},
-		});
-			
-		
-	});
-	
-	
-
-	// FIELD UPDATES 
-	
-		// push Functions to share contact details where we can
-		function pushName(){
-			$("#newsletter-name").val( $("#name").val() );
-			$("#directrequest-name").val( $("#name").val() );
-			$("#trello-name").val( $("#name").val() );
-		}
-		
-		function pushCompany(){
-			$("#directrequest-company").val( $("#company").val() );
-			$("#trello-company").val( $("#company").val() );
-		}
-		
-		function pushEmail(){
-			$("#newsletter-email").val( $("#email").val() );
-			$("#directrequest-email").val( $("#email").val() );
-			$("#trello-email").val( $("#email").val() );
-		}
-	
-		// Trello Checks
-		$("#trello-name").on("change",function() {       
-			$("#name").val($(this).val());
-			pushName();
-		});
-		$("#trello-company").on("change",function() {       
-			$("#company").val($(this).val());
-			pushCompany();
-		});
-		$("#trello-email").on("change",function() {       
-			$("#email").val($(this).val());
-			pushEmail();
-		});
-	
-		// Newsletter Checks
-		$("#newsletter-name").on("change",function() {       
-			$("#name").val($(this).val());
-			pushName();
-		});
-		$("#newsletter-email").on("change",function() {       
-			$("#email").val($(this).val());
-			pushEmail();
-		});
-	
-		// Direct Request Checks
-		$("#directrequest-name").on("change",function() {       
-			$("#name").val($(this).val());
-			pushName();
-		});
-		$("#directrequest-company").on("change",function() {       
-			$("#company").val($(this).val());
-			pushCompany();
-		});
-		$("#directrequest-email").on("change",function() {       
-			$("#email").val($(this).val());
-			pushEmail();
-		});
-	
-	
-	
+    var typed = new Typed('.u-text-animation.u-text-animation--typing', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 60,
+      loop: true,
+      backSpeed: 35,
+      backDelay: 1500,
+      showCursor: false,
+    });
   </script>
+
+  <script src="./assets/js/jqBootstrapValidation.js"></script>
+  <script src="./assets/js/howtooffshore-forms.js"></script>
   
 </body>
 

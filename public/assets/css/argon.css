@@ -572,6 +572,13 @@ h6,
     line-height: 1.5;
 }
 
+.display-5
+{
+    font-size: 1.6275rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
 hr
 {
     margin-top: 2rem;
