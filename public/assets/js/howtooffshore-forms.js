@@ -42,45 +42,17 @@ $(function() {
 });
 
 // NEWSLETTER SUBMISSION
-$(function() {
+$("#newsletter").submit(function(e) {
+    e.preventDefault();
 
-    $("#newsletter input").jqBootstrapValidation({
-    
-        preventSubmit: true,
-        submitSuccess: function ($form, event) {
-
-
-
-            var data = {
-                source: 'HOW TO OFFSHORE',
-                type: 'NEWSLETTER',
-                name: $('#name').val(),
-                company: $('#company').val(),
-                email: $('#email').val()
-            }
-
-            var $form = $(this);
-            $.post($form.attr("action"), $form.serialize()).then(function() {
-
-                // Hide our form
-                $( "#trello-form" ).hide();
-                
-                // Show our success message!
-                $( "#trello-success" ).show();
-
-            });
-
-            // will not trigger the default submission in favor of the ajax function
-            event.preventDefault();
-        },
-        submitError: function($form, event, errors) {
-            // additional error messages or events
-        },
-        filter: function() {
-            return $(this).is(":visible");
-        },
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+        // Hide our form
+        $( "#trello-form" ).hide();
+        
+        // Show our success message!
+        $( "#trello-success" ).show();
     });
-    
 });
 
 // DIRECT REQUEST SUBMISSION

@@ -18,6 +18,12 @@
   <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
   <!-- Docs CSS -->
   <!-- <link type="text/css" href="./assets/css/docs.min.css" rel="stylesheet"> -->
+
+  <style>
+    .hidden {
+      display:none;
+    }
+  </style>
 </head>
 
 <body>
@@ -844,11 +850,14 @@
         </div>
 		<div class="col-lg-8 mb-3 mt-3">
 		
-      <!-- <form name="newsletter" id="newsletter" method="POST" netlify-honeypot="bot-field" netlify> -->
-      <form name="contact" method="POST" netlify>
+      <form name="newsletter" id="newsletter" method="POST" netlify-honeypot="bot-field" netlify>
+      <!-- <form name="contact" method="POST" netlify> -->
         <p class="hidden">
           <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
         </p>
+
+        <input id="source" name="source" value="HOW TO OFFSHORE" type="hidden">
+        <input id="type" name="type" value="NEWSLETTER" type="hidden">
 			  
 			  <div class="form-row" id="newsletter-form">
 				<div class="col">
