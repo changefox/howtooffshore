@@ -1,4 +1,20 @@
 
+function hideMyModal(modal){
+
+    // console.log(modal);
+    if(modal === 'whatisoffshoring'){
+        $('#modal-whatisoffshoring').modal('toggle');
+    }
+    else if(modal === 'whoshouldoffshore'){
+        $('#modal-whoshouldoffshore').modal('toggle');
+    }
+    else if(modal === 'whereshouldyouoffshore'){
+        $('#modal-whereshouldyouoffshore').modal('toggle');
+    }
+    
+
+}
+
 // TRELLO SUBMISSION
 $("#trello").submit(function(e) {
     e.preventDefault();
