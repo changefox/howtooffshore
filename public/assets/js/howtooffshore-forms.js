@@ -62,7 +62,7 @@ $("#directrequest").submit(function(e) {
 
     // push Functions to share contact details where we can
     function pushName(){
-        $("#newsletter-name").val( $("#name").val() );
+        // $("#newsletter-name").val( $("#name").val() );
         $("#directrequest-name").val( $("#name").val() );
         $("#trello-name").val( $("#name").val() );
     }
@@ -73,7 +73,7 @@ $("#directrequest").submit(function(e) {
     }
     
     function pushEmail(){
-        $("#newsletter-email").val( $("#email").val() );
+        // $("#newsletter-email").val( $("#email").val() );
         $("#directrequest-email").val( $("#email").val() );
         $("#trello-email").val( $("#email").val() );
     }
@@ -93,14 +93,14 @@ $("#directrequest").submit(function(e) {
     });
 
     // Newsletter Checks
-    $("#newsletter-name").on("change",function() {       
-        $("#name").val($(this).val());
-        pushName();
-    });
-    $("#newsletter-email").on("change",function() {       
-        $("#email").val($(this).val());
-        pushEmail();
-    });
+    // $("#newsletter-name").on("change",function() {       
+    //     $("#name").val($(this).val());
+    //     pushName();
+    // });
+    // $("#newsletter-email").on("change",function() {       
+    //     $("#email").val($(this).val());
+    //     pushEmail();
+    // });
 
     // Direct Request Checks
     $("#directrequest-name").on("change",function() {       
