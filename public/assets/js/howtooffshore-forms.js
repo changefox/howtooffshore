@@ -30,18 +30,18 @@ $("#trello").submit(function(e) {
 });
 
 // NEWSLETTER SUBMISSION
-$("#newsletter").submit(function(e) {
-    e.preventDefault();
+// $("#newsletter").submit(function(e) {
+//     e.preventDefault();
 
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function() {
-        // Hide our form
-        $( "#newsletter-form" ).hide();
+//     var $form = $(this);
+//     $.post($form.attr("action"), $form.serialize()).then(function() {
+//         // Hide our form
+//         $( "#newsletter-form" ).hide();
         
-        // Show our success message!
-        $( "#newsletter-success" ).show();
-    });
-});
+//         // Show our success message!
+//         $( "#newsletter-success" ).show();
+//     });
+// });
 
 // DIRECT REQUEST SUBMISSION
 $("#directrequest").submit(function(e) {
